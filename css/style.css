@@ -1,0 +1,162 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+a {
+    color: inherit;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+@media (min-width: 1440px) {
+    .container {
+        width: 1200px;
+    }
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    background: url(../images/hero_photo.svg) no-repeat;
+    background-position-x: 130%;
+    background-position-y: 10%;
+}
+
+nav {
+    padding-top: 30px;
+}
+
+.nav__burger {
+    display: none;
+}
+
+.nav__left,
+.nav__link {
+    gap: 2rem;
+}
+
+.nav__link_item a {
+    color: #150c01b5;
+    font-size: 16px;
+}
+
+.nav__link_item a:hover {
+    color: #DC780B;
+}
+
+.btns {
+    width: 155px;
+    height: 46px;
+    color: #fff;
+    border: 1.5px solid #DC780B;
+    border-radius: 5px;
+    background-color: #DC780B;
+    cursor: pointer;
+}
+
+.btns:hover {
+    color: #DC780B;
+    border: 1.5px solid #DC780B;
+    border-radius: 5px;
+    background-color: #fff;
+
+}
+
+.hero {
+    height: 680px;
+}
+
+.hero__left h1 {
+    color: #150C01;
+    font-size: 48.83px;
+    line-height: 57.6px;
+    margin-top: 164px;
+}
+
+.hero__left p {
+    color: #150c01b5;
+    font-weight: 600;
+    line-height: 24px;
+    margin: 42px 0;
+}
+
+.hero__order_btn {
+    margin-right: 2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 850px) {
+    .nav__burger {
+        display: block;
+        font-size: 24px;
+        margin-left: 2rem;
+        cursor: pointer;
+    }
+
+    .nav__link {
+        display: none;
+    }
+}
+
+
+@media (max-width: 1440px) {
+    header {
+        background-position-x: 145%;
+    }
+}
+
+@media (max-width: 1370px) {
+    header {
+        background: none;
+    }
+}
+
+@media (max-width: 650px) {
+    .hero__left h1 {
+        font-size: 38px;
+        margin-top: 106px;
+    }
+
+    .hero__left p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 520px) {
+    .hero__left h1 {
+        font-size: 28px;
+        margin-top: 106px;
+    }
+
+    .hero__left p {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 440px) {
+    .btns {
+        width: 125px;
+        height: 46px;
+    }
+}
